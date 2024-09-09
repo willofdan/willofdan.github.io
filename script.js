@@ -1,4 +1,4 @@
-const randomNumber = Math.floor(Math.random()*100 + 1);
+const randomNumber = Math.floor(Math.random()*10000 + 1);
 
 const inputGuess = document.querySelector(".inputGuess");
 const buttonGuess = document.querySelector(".buttonGuess");
@@ -19,7 +19,7 @@ function tryGuess (){
         lastResult.textContent = `${lastResult.textContent} ${input}`;
     }
 
-    if(count === 10){
+    if(count === 20){
         guessing.textContent = "YAH GAME OVER NOOB BANGET!!!";
         guessing.style.backgroundColor = "red";
         guessing.style.color = "white";
@@ -85,7 +85,7 @@ function setNewGame(){
 
     lastResult.style.backgroundColor = "white";
 
-    randomNumber = Math.floor(Math.random() * 100) + 1;
+    randomNumber = Math.floor(Math.random() * 10000) + 1;
 
 }
 
