@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-title">
+        <h1>Number Guessing Game</h1>
+        <p style="letter-spacing: 1px;">Kalian diberikan 10 kesempatan untuk menebak angka dari 1-100. Silahkan masukkan angka pada kotak yang disediakan.</p>
+        <p>Guess the Number 1-100!</p>
+      </div>
+      <div class="container-guess">
+        <label for="input">Enter The Number : </label>
+        <input type="number" id="input" class="inputGuess" max="100" min="1">
+        <button type="button" class="buttonGuess">Submit Guess</button>
+      <div class="container-display">
+        <p class="lastResult"></p>
+        <p class="guessing"></p>
+        <p class="lowOrHi"></p>
+      </div>
+      <button class="resetGame" style="display:none">Start New Game</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
