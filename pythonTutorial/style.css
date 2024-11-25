@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    background-image: url(wall.jpg);
+
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.daftar-isi{
+    color: rgb(37, 37, 37);
+    padding-right: 30px;
+    padding-top: 30px;
+    position: sticky;
+    font-family: 'Parkisans';
+    height: 100vh;
+    color: white;
+    top: 0;
+    overflow-y: auto;
+}
+
+.daftar-isi ul {
+    list-style-type: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.daftar-isi ul ul {
+    margin-left: 15px;
+}
+
+h3{
+    margin: 5px 0;
+}
+p{
+    margin: 5px 0;
+}
+.main{
+    background-color: rgb(53, 53, 53);
+    border-radius: 20px;
+    color: rgb(230, 230, 230);
+    padding: 30px;
+    flex: 1;
+    font-size: 0.96rem;
+}
+.main h3{
+    margin-top: 15px;
+}
+.code-box{
+    background-color: #141414;
+            color: #f8f8f2; 
+            padding: 10px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 14px;
+            overflow-x: auto;
+}
+
+.petunjuk{
+    margin-left: 20px;
+}
+
+span{
+   
+            color: #f8f8f2; 
+            font-size: 16px;
+            font-family: "Courier New", Courier, monospace;
+}
+ hr{
+    margin: 10px 0;
+ }
+
+ @media only screen and (max-width: 700px){
+    .container{
+        flex-direction: column;
+        margin: 0;
+    }
+    .daftar-isi{
+       display: none;
+    }
+    .main{
+        border-radius: 0;
+    }
+ }
