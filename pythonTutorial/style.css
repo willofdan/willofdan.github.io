@@ -87,7 +87,7 @@ span{
 
 @media only screen and (max-width: 780px){
 * {
-    box-sizing:content-box;
+    box-sizing: box-sizing;
 }
     .container{
         display: block;
