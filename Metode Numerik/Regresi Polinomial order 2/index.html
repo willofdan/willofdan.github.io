@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Polynomial Regression Order 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Polynomial Regression Order 2</h1>
+
+      <label for="dataCount">Jumlah Data :</label>
+      <input type="number" id="dataCount" min="2" max="10" />
+      <button onclick="generateInputFields()">Generate Input Fields</button>
+
+      <div id="inputFields"></div>
+      <button
+        id="calculateBtn"
+        style="display: none"
+        onclick="calculateRegression()"
+      >
+        Calculate
+      </button>
+
+      <div id="resultTable"></div>
+      <div id="matrixDisplay"></div>
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
