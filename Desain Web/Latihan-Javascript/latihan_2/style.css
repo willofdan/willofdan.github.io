@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins";
+  background-image: url(image/pexels-hebaysal-773471.jpg);
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(43, 43, 43, 0.95);
+  color: white;
+  padding: 20px;
+  margin: 20px 10%;
+  border-radius: 20px;
+}
+
+.container-harga h2 {
+  text-align: center;
+}
+
+.container-harga table {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-collapse: collapse;
+  width: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.container-harga tr td {
+  border: 1px solid black;
+  padding: 5px;
+  width: 25%;
+  text-align: center;
+}
+
+.container-harga tr:first-of-type {
+  background-color: rgb(179, 179, 179);
+  font-weight: 600;
+}
+
+.container-harga tr:first-child td:first-child {
+  background-color: white;
+}
+
+.table-kota {
+  font-weight: 600;
+  text-align: start;
+  background-color: rgb(179, 179, 179);
+}
+select,
+input {
+  font-family: "Poppins";
+  padding: 3px;
+  background-color: white;
+  border: none;
+}
+
+#nama,
+#jumlah-tiket {
+  padding-left: 8px;
+}
+
+select {
+  width: 150px;
+}
+
+#jumlah-tiket {
+  width: 70px;
+}
+
+#nama {
+  width: 200px;
+}
+.container-pesan h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.container-pesan {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.container-IO {
+  display: flex;
+}
+.container-input {
+  flex: 1;
+}
+.container-output {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-IO td:first-child {
+  width: 50%;
+}
+
+.container-input,
+.container-output {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+}
+.tombol {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px white solid;
+  color: white;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    margin: 14px;
+  }
+  #nama {
+    width: 110px;
+  }
+
+  #kelas,
+  #tujuan {
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    margin: 10px;
+  }
+  .container-IO {
+    flex-direction: column;
+  }
+  #nama {
+    width: 150px;
+  }
+
+  #kelas,
+  #tujuan {
+    width: 100px;
+  }
+
+  .container-input td:first-child {
+    width: 55%;
+  }
+
+  .container-output td:first-child {
+    min-width: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container-input tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-output tr {
+    display: flex;
+    flex-direction: column;
+  }
+}

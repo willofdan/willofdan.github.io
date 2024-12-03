@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url(image/japan-background-digital-art.jpg);
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  background-repeat: repeat-y;
+}
+
+body {
+  display: flex;
+
+  justify-content: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0 auto;
+  width: 60%;
+  max-width: 100%;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 2px;
+  border-radius: 4px;
+  border: 1px solid rgb(102, 102, 102);
+  font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  padding: 2px;
+  padding-left: 3px;
+  border-radius: 4px;
+  max-width: 400px;
+  max-height: 200px;
+  font-family: "Poppins", sans-serif;
+}
+
+td:first-child {
+  width: 30%;
+}
+
+select {
+  font-family: "Poppins", sans-serif;
+  width: 130px;
+  border-radius: 4px;
+}
+
+label {
+  width: 100%;
+  height: 100%;
+}
+
+#single {
+  margin-left: 10px;
+}
+
+td {
+  padding-top: 5px;
+  text-align: left;
+}
+
+button {
+  padding: 3px;
+  width: 70px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  border: 2px solid rgb(63, 63, 63);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+button:hover {
+  background-color: rgb(196, 196, 196);
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.tombol {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+h2 {
+  color: rgb(54, 54, 54);
+}
+
+hr {
+  margin: 10px 0;
+  height: 4px;
+  background-color: rgb(78, 78, 78);
+  border-radius: 10px;
+}
+
+.container-output td:last-child::before {
+  content: ": ";
+}
+
+.container-output {
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+.container-output > * {
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  td:first-child {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  td:last-child {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tombol {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}

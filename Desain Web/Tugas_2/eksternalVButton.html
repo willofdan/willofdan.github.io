@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    background-image: url("wall2.jpeg"); 
+    background-repeat: repeat-x;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+  }
+  #myDiv{
+    display: none;
+    font-size: small;
+  }
+  #toggleButton:hover {
+    background-color: #ffffff;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+}
+  #toggleButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative; /* Dibutuhkan untuk pindah posisi */
+}
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td {
+    padding: 8px 12px;
+    vertical-align: top;
+  }
+  td:first-child {
+    font-weight: bold;
+    text-align: left;
+    width: 28%;
+  }
+  td:nth-child(2) {
+    width: 2%;
+  }
+  td:last-child {
+    width: 70%;
+  }
+  .biodata {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 800px;
+    max-height: auto;
+    margin: 3px auto;
+    box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+    </style>
+  </head>
+  <body>
+    <div id="myDiv">
+      <div class="biodata diri">
+        <h2>Biodata Diri</h2>
+        <table>
+          <tr>
+            <td>Nama Lengkap</td>
+            <td>:</td>
+            <td>Danu Suko Handiyanto</td>
+          </tr>
+          <tr>
+            <td>Nama Panggilan</td>
+            <td>:</td>
+            <td>Danu</td>
+          </tr>
+          <tr>
+            <td>Tempat, Tanggal Lahir</td>
+            <td>:</td>
+            <td>Jakarta, 31 Februari 2005</td>
+          </tr>
+          <tr>
+            <td>Agama</td>
+            <td>:</td>
+            <td>Islam</td>
+          </tr>
+          <tr>
+            <td>Domisili</td>
+            <td>:</td>
+            <td>Jakarta</td>
+          </tr>
+          <tr>
+            <td>Pekerjaan</td>
+            <td>:</td>
+            <td>Pelajar/Mahasiswa</td>
+          </tr>
+        </table>
+      </div>
+      <div class="biodata Perkuliahan">
+        <h2>Biodata Perkuliahan</h2>
+        <table>
+          <tr>
+            <td>Nama Lengkap</td>
+            <td>:</td>
+            <td>Danu Suko Handiyanto</td>
+          </tr>
+          <tr>
+            <td>NIM</td>
+            <td>:</td>
+            <td>1512623038</td>
+          </tr>
+          <tr>
+            <td>Prodi</td>
+            <td>:</td>
+            <td>Pendidikan Teknik Informatika Dan Komputer</td>
+          </tr>
+          <tr>
+            <td>Fakultas</td>
+            <td>:</td>
+            <td>Teknik</td>
+          </tr>
+          <tr>
+            <td>Universitas</td>
+            <td>:</td>
+            <td>Universitas Negeri Jakarta</td>
+          </tr>
+        </table>
+      </div>
+      <div class="footer">
+        &copy; Danu Suko Handiyanto 1512623038 . All Rights Reserved, Since 2024
+      </div>
+    </div>
+    <button id="toggleButton">Toggle Div</button>
+
+    <script>
+      // Ambil referensi elemen
+      const toggleButton = document.getElementById("toggleButton");
+      const myDiv = document.getElementById("myDiv");
+
+      toggleButton.addEventListener("click", () => {
+        if (myDiv.style.display === "none" || myDiv.style.display === "") {
+          myDiv.style.display = "block";
+        } else {
+          myDiv.style.display = "none";
+        }
+        toggleButton.style.position = "absolute";
+        toggleButton.style.top = "10px";
+        toggleButton.style.left = "10px";
+        toggleButton.style.transform = "none";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registrasi</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        margin-top: 35px;
+      }
+      tr {
+        background-color: #cccbcb;
+      }
+      td {
+        padding: 8px;
+        border: 1px solid #000;
+        vertical-align: top;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 6px;
+        box-sizing: border-box;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+      .button-row {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <table>
+        <!-- USERNAM -->
+        <tr>
+          <td>User Name</td>
+          <td><input type="text" name="username" required /></td>
+        </tr>
+
+        <!-- PASSWORD -->
+        <tr>
+          <td>Password</td>
+          <td><input type="password" name="password" required /></td>
+        </tr>
+
+        <!-- RE-TYPE -->
+        <tr>
+          <td>Re-type Password</td>
+          <td><input type="password" name="retype_password" required /></td>
+        </tr>
+
+        <!-- EMAIL -->
+        <tr>
+          <td>E-mail</td>
+          <td><input type="email" name="email" required /></td>
+        </tr>
+
+        <!-- NAMA -->
+        <tr>
+          <td>Nama</td>
+          <td><input type="text" name="nama" required /></td>
+        </tr>
+
+        <!-- NIM -->
+        <tr>
+          <td>NIM</td>
+          <td><input type="text" name="nim" required /></td>
+        </tr>
+
+        <!-- ALAMAT -->
+        <tr>
+          <td>Alamat</td>
+          <td><input type="text" name="alamat" required /></td>
+        </tr>
+
+        <!-- KOTA -->
+        <tr>
+          <td>Kota Asal</td>
+          <td>
+            <select name="kota_asal">
+              <option value="">Pilih Kota</option>
+              <option value="jakarta">Jakarta</option>
+              <option value="bandung">Bandung</option>
+              <option value="surabaya">Surabaya</option>
+              <option value="surabaya">Bali</option>
+              <option value="surabaya">Aceh</option>
+              <option value="surabaya">IKN :v</option>
+            </select>
+          </td>
+        </tr>
+
+        <!-- KELAMIN -->
+        <tr>
+          <td>Jenis Kelamin</td>
+          <td>
+            <input type="radio" name="jenis_kelamin" value="pria" required />
+            Pria
+            <input type="radio" name="jenis_kelamin" value="wanita" required />
+            Wanita
+          </td>
+        </tr>
+
+        <!-- HOBI -->
+        <tr>
+          <td>Hobi</td>
+          <td>
+            <input type="checkbox" name="hobi" value="coding" /> Coding<br />
+            <input type="checkbox" name="hobi" value="psan" /> PSan<br />
+            <input type="checkbox" name="hobi" value="bilyard" /> Bilyard
+          </td>
+        </tr>
+
+        <!-- DESKRIPSI -->
+        <tr>
+          <td>Deskripsi Pribadi</td>
+          <td><textarea name="deskripsi" rows="4"></textarea></td>
+        </tr>
+
+        <!-- BUTTON -->
+        <tr class="button-row">
+          <td colspan="2">
+            <button type="submit">Kirim</button>
+            <button type="reset">Hapus</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

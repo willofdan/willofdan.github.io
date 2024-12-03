@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 2</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-harga">
+        <h2>HARGA TIKET</h2>
+        <table>
+          <tr>
+            <td></td>
+            <td>Eksekutif</td>
+            <td>Bisnis</td>
+            <td>Ekonomi</td>
+          </tr>
+          <tr>
+            <td class="table-kota">Jakarta</td>
+            <td>70000</td>
+            <td>40000</td>
+            <td>10000</td>
+          </tr>
+          <tr>
+            <td class="table-kota">Solo</td>
+            <td>80000</td>
+            <td>50000</td>
+            <td>20000</td>
+          </tr>
+          <tr>
+            <td class="table-kota">Surabaya</td>
+            <td>90000</td>
+            <td>60000</td>
+            <td>30000</td>
+          </tr>
+        </table>
+      </div>
+      <div class="container-pesan">
+        <h2>TRAVEL BINTANG ABADI</h2>
+        <div class="container-IO">
+          <div class="container-input">
+            <table>
+              <!-- Nama -->
+              <tr>
+                <td>
+                  <label for="nama">Nama</label>
+                </td>
+                <td>: <input type="text" id="nama" /></td>
+              </tr>
+
+              <!-- Tujuan -->
+              <tr>
+                <td><label for="tujuan">Tujuan</label></td>
+                <td>
+                  :
+                  <select name="tujuan" id="tujuan">
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Solo">Solo</option>
+                    <option value="Surabaya">Surabaya</option>
+                  </select>
+                </td>
+              </tr>
+
+              <!-- Kelas -->
+              <tr>
+                <td><label for="kelas">Kelas</label></td>
+                <td>
+                  :
+                  <select name="kelas" id="kelas">
+                    <option value="Eksekutif">Eksekutif</option>
+                    <option value="Bisnis">Bisnis</option>
+                    <option value="Ekonomi">Ekonomi</option>
+                  </select>
+                </td>
+              </tr>
+
+              <!-- Jumlah Tiket -->
+              <tr>
+                <td>
+                  <label for="jumlah-tiket">Jumlah Tiket</label>
+                </td>
+                <td>
+                  :
+                  <input type="number" id="jumlah-tiket" />
+                </td>
+              </tr>
+
+              <!-- Member -->
+              <tr>
+                <td><label for="">Member</label></td>
+                <td>
+                  :
+                  <input type="checkbox" name="member" id="member" />
+                  <label for="member">Ya</label>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 0.7rem">*Diskon 10% Khusus Member</p>
+          </div>
+          <div class="container-output">
+            <table>
+              <tr>
+                <td>Harga Tiket</td>
+                <td>: <span class="output-harga"></span></td>
+              </tr>
+              <tr>
+                <td>Sub Total</td>
+                <td>: <span class="output-subTotal"></span></td>
+              </tr>
+              <tr>
+                <td>Diskon</td>
+                <td>: <span class="output-diskon"></span></td>
+              </tr>
+              <tr>
+                <td>Total Bayar</td>
+                <td>: <span class="output-tBayar"></span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="tombol">
+          <button class="hitung">Hitung</button>
+          <button class="ulang">Ulang</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

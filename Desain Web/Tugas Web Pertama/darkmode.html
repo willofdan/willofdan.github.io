@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Web Desain 1</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins";
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 30px 200px;
+      }
+      img {
+        width: 700px;
+      }
+      .container-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container-img > div {
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        text-align: start;
+      }
+      p {
+        text-align: justify;
+        font-size: 1.1rem;
+      }
+
+      /* Dark mode styles */
+      [data-bs-theme="dark"] {
+        background-color: #212529;
+        color: #fff;
+      }
+
+      .theme-toggle {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+      }
+
+      .form-check-input:checked {
+        background-color: #198754;
+        border-color: #198754;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="darkModeToggle" />
+        <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Masjid Al-Aqsa: Warisan Suci dan Harapan Kebebasan</h1>
+
+      <div class="container-img">
+        <div>
+          <img
+            src="https://akcdn.detik.net.id/community/media/visual/2023/04/03/pesona-dome-of-the-rock-yang-sering-dikira-masjid-al-aqsa-8_169.jpeg?w=700&q=90"
+            alt="aqsa.jpg"
+            title="Dome of The Rock"
+            class="img-fluid"
+          />
+          <i>Dom Of The Rock</i>
+        </div>
+      </div>
+      <div>
+        <p>
+          Masjid Al-Aqsa adalah masjid yang sangat penting bagi umat Islam dan
+          merupakan masjid tersuci ketiga setelah Masjidil Haram di Makkah dan
+          Masjid Nabawi di Madinah. Terletak di Yerusalem, Palestina, masjid ini
+          berada di kawasan Al-Haram Al-Sharif atau "Tanah Suci", yang menjadi
+          tempat suci bagi tiga agama besar: Islam, Kristen, dan Yahudi. Salah
+          satu bangunan ikonik di kawasan ini adalah Dome of the Rock, dengan
+          kubah emasnya yang berkilauan. Meskipun seringkali dikira sebagai
+          Masjid Al-Aqsa, sebenarnya Dome of the Rock adalah bangunan yang
+          terpisah namun masih berada dalam kompleks Al-Aqsa.
+        </p>
+        <br />
+        <p>
+          Sejarah Masjid Al-Aqsa sangat panjang dan penuh makna. Masjid ini
+          menjadi saksi berbagai peristiwa bersejarah, termasuk peristiwa Isra'
+          Mi'raj di mana Nabi Muhammad ﷺ melakukan perjalanan malam dari
+          Masjidil Haram menuju Masjid Al-Aqsa sebelum naik ke langit. Dalam
+          Al-Qur'an, Masjid Al-Aqsa disebutkan sebagai tempat yang diberkahi dan
+          menjadi simbol persatuan umat Islam di seluruh dunia.
+        </p>
+        <br />
+        <p>
+          Selama bertahun-tahun, Masjid Al-Aqsa telah menghadapi ancaman dan
+          ketidakstabilan akibat konflik yang terjadi di wilayah tersebut,
+          terutama dari penjajahan Israel yang terus berlangsung. Bangunan
+          bersejarah ini telah menjadi simbol perjuangan rakyat Palestina untuk
+          mempertahankan identitas, tanah, dan kebebasan mereka. Umat Islam di
+          seluruh dunia terus mendoakan agar Masjid Al-Aqsa dapat terbebas dari
+          penjajahan dan dikembalikan sepenuhnya dalam perlindungan umat Islam.
+        </p>
+        <br />
+        <p>
+          Semoga suatu hari nanti, Masjid Al-Aqsa bisa bebas dari penjajahan dan
+          kembali menjadi tempat ibadah yang damai serta aman bagi semua orang
+          yang ingin berdoa dan mencari kedamaian di sana.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+      const darkModeToggle = document.getElementById("darkModeToggle");
+
+      // Check for saved theme preference
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.setAttribute("data-bs-theme", "dark");
+        darkModeToggle.checked = true;
+      }
+
+      // Toggle dark mode
+      darkModeToggle.addEventListener("change", () => {
+        if (darkModeToggle.checked) {
+          document.documentElement.setAttribute("data-bs-theme", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.documentElement.setAttribute("data-bs-theme", "light");
+          localStorage.setItem("theme", "light");
+        }
+      });
+    </script>
+  </body>
+</html>

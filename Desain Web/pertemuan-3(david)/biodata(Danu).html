@@ -1,0 +1,131 @@
+<!-- Buatlah Homepage dengan komponen yang berisi sebagai berikut:
+1. Biodata Diri (Nama Lengkap, Nama Panggilan, Tempat TGL Lahir, Agama, Domisili, Pekerjaan)
+2. Biodata Perkuliahan (Nama Lengkap, NIM, Prodi, Fakultas, Universitas)
+3. Footer (Copyright perancang Homepage)
+
+*contoh copyright
+© David Akbar 152620000 . All Rights Reserved, since 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata Danu</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        margin: 0;
+        background-color: rgb(206, 206, 206);
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td {
+        padding: 8px 12px;
+        vertical-align: top;
+      }
+      td:first-child {
+        font-weight: bold;
+        text-align: left;
+        width: 28%;
+      }
+      td:nth-child(2) {
+        width: 2%;
+      }
+      td:last-child {
+        width: 70%;
+      }
+      .biodata {
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        max-width: 700px;
+        margin: 10px auto;
+        box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="biodata diri">
+      <h2>Biodata Diri</h2>
+      <table>
+        <tr>
+          <td>Nama Lengkap</td>
+          <td>:</td>
+          <td>Danu Suko Handiyanto</td>
+        </tr>
+        <tr>
+          <td>Nama Panggilan</td>
+          <td>:</td>
+          <td>Danu</td>
+        </tr>
+        <tr>
+          <td>Tempat, Tanggal Lahir</td>
+          <td>:</td>
+          <td>Jakarta, 31 Februari 2005</td>
+        </tr>
+        <tr>
+          <td>Agama</td>
+          <td>:</td>
+          <td>Islam</td>
+        </tr>
+        <tr>
+          <td>Domisili</td>
+          <td>:</td>
+          <td>Jakarta</td>
+        </tr>
+        <tr>
+          <td>Pekerjaan</td>
+          <td>:</td>
+          <td>Pelajar/Mahasiswa</td>
+        </tr>
+      </table>
+    </div>
+    <div class="biodata Perkuliahan">
+      <h2>Biodata Perkuliahan</h2>
+      <table>
+        <tr>
+          <td>Nama Lengkap</td>
+          <td>:</td>
+          <td>Danu Suko Handiyanto</td>
+        </tr>
+        <tr>
+          <td>NIM</td>
+          <td>:</td>
+          <td>1512623038</td>
+        </tr>
+        <tr>
+          <td>Prodi</td>
+          <td>:</td>
+          <td>Pendidikan Teknik Informatika Dan Komputer</td>
+        </tr>
+        <tr>
+          <td>Fakultas</td>
+          <td>:</td>
+          <td>Teknik</td>
+        </tr>
+        <tr>
+          <td>Universitas</td>
+          <td>:</td>
+          <td>Universitas Negeri Jakarta</td>
+        </tr>
+      </table>
+    </div>
+    <div class="footer">
+      &copy; Danu Suko Handiyanto 1512623038 . All Rights Reserved, Since 2024
+    </div>
+  </body>
+</html>

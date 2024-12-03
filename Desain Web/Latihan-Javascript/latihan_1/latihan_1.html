@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 1</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Data Mahasiswa Universitas Negeri Jakarta</h2>
+      <hr width="100%" />
+
+      <div class="container-input">
+        <table>
+          <!-- NIM -->
+          <tr>
+            <td><label for="nim">NIM</label></td>
+            <td>
+              :
+              <input
+                id="nim"
+                type="number"
+                max="20000000000"
+                name="nim"
+                required
+              />
+            </td>
+          </tr>
+
+          <!-- Nama -->
+          <tr>
+            <td><label for="nama">Nama Mahasiswa</label></td>
+            <td>: <input id="nama" type="text" name="nama" required /></td>
+          </tr>
+
+          <!-- Kelamin -->
+          <tr>
+            <td><label for="kelamin">Jenis Kelamin</label></td>
+            <td>
+              :
+              <select id="kelamin" name="jenis_kelamin" required>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Agama -->
+          <tr>
+            <td><label for="agama">Agama</label></td>
+            <td>
+              :
+              <select id="agama" name="agama" required>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Konghuchu">Konghuchu</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Status -->
+          <tr>
+            <td><label for="status">Status</label></td>
+            <td>
+              :
+              <input
+                type="radio"
+                name="status"
+                value="Menikah"
+                required
+                id="menikah"
+              />
+              <label for="menikah">Menikah</label>
+              <input
+                type="radio"
+                name="status"
+                value="Single"
+                required
+                id="single"
+              />
+              <label for="single">Single</label>
+            </td>
+          </tr>
+
+          <!-- Jurusan -->
+          <tr>
+            <td><label for="jurusan">Jurusan di UNJ</label></td>
+            <td>
+              :
+              <select name="jurusan" id="jurusan">
+                <option value="" disabled selected>Pilih Jurusan</option>
+                <option value="Pendidikan Teknik Mesin">
+                  Pendidikan Teknik Mesin
+                </option>
+                <option value="Teknik Mesin">Teknik Mesin</option>
+                <option value="Pendidikan Teknik Elektro">
+                  Pendidikan Teknik Elektro
+                </option>
+                <option value="Teknik Elektro">Teknik Elektro</option>
+                <option value="Pendidikan Teknik Bangunan">
+                  Pendidikan Teknik Bangunan
+                </option>
+                <option value="Teknik Sipil">Teknik Sipil</option>
+                <option value="Pendidikan Teknik Informatika dan Komputer">
+                  Pendidikan Teknik Informatika dan Komputer
+                </option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Pendidikan Teknik Industri">
+                  Pendidikan Teknik Industri
+                </option>
+                <option value="Teknik Industri">Teknik Industri</option>
+                <option value="Pendidikan Tata Boga">
+                  Pendidikan Tata Boga
+                </option>
+                <option value="Pendidikan Tata Busana">
+                  Pendidikan Tata Busana
+                </option>
+                <option value="Pendidikan Tata Rias">
+                  Pendidikan Tata Rias
+                </option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Komentar -->
+          <tr>
+            <td><label for="komentar">Komentar</label></td>
+            <td>
+              :
+              <textarea
+                name="komentar"
+                id="komentar"
+                rows="4"
+                cols="30"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <div class="tombol">
+          <button class="reset">Reset</button>
+          <button class="submit">Submit</button>
+        </div>
+      </div>
+
+      <div class="container-output"></div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
