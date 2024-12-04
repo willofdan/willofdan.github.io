@@ -42,7 +42,9 @@ function setTampil() {
   document.querySelector(".output-harga").textContent = `Rp ${
     harga[data.tujuan][data.kelas]
   }`;
-  document.querySelector(".output-subTotal").textContent = data.jumlahTiket;
+  document.querySelector(".output-subTotal").textContent = `Rp ${
+    harga[data.tujuan][data.kelas] * data.jumlahTiket
+  }`;
   document.querySelector(".output-diskon").textContent = diskon;
   document.querySelector(".output-tBayar").textContent = `Rp ${totalBayar}`;
 }
