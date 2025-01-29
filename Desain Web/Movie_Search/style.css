@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+SC:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+main {
+  width: 70vw;
+  margin-bottom: 20px;
+}
+
+main {
+  padding-bottom: 40px;
+}
+
+header {
+  margin-top: 30px;
+
+  h1 {
+    font-family: "Recursive";
+    font-weight: 800;
+    font-size: 2.1rem;
+  }
+}
+
+.search {
+  margin-top: 30px;
+  display: flex;
+
+  .input-key {
+    padding: 0 8px;
+  }
+  .button-search {
+    padding: 4px 8px;
+  }
+}
+
+.container-movie {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: 8px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid rgb(201, 228, 243);
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: calc(1 / 1.5);
+  }
+  .desc {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+
+.judul {
+  font-size: 1.3rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.tahun {
+  font-size: 1rem;
+  font-family: "Roboto mono";
+  color: rgb(73, 73, 73);
+}
+
+.button-description {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-family: "Poppins";
+  background-color: rgb(45, 131, 230);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  width: 70%;
+  font-size: 0.9rem;
+}
+
+.button-description:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(45, 131, 230);
+  border: 1px solid rgb(45, 131, 230);
+}
+
+.container-detail {
+  width: 100%;
+  height: 101vh;
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail {
+  width: 800px;
+  background-color: white;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 20px;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    tr > td,
+    th {
+      border: 1px solid rgb(104, 104, 104);
+      text-align: start;
+    }
+  }
+}
+
+.detail-exit {
+  position: absolute;
+  display: inline-block;
+  background-color: aqua;
+}
+
+@media only screen and (max-width: 460px) {
+  .container-movie {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
